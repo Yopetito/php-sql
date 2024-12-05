@@ -11,7 +11,7 @@
 <?php
 try
 {
-    $mysqlClient = new \PDO('mysql:host=localhost;dbname=recipe;chatset=utf8', 'root', '');
+    $mysqlClient = new \PDO('mysql:host=localhost;dbname=recipe;chatset=utf8', 'root', 'Jifomeye1207');
 }
 catch (Exeption $e)
 {
@@ -26,7 +26,7 @@ $recipesStatement = $mysqlClient->query($sqlQuery);
 // $recipesStatement->execute();
 $recipes = $recipesStatement->fetchALL();
 ?>
-<table>
+<table border = 1>
     <thead>
         <tr>
             <th>Recette</a></th>
